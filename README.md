@@ -42,7 +42,7 @@ This project requires Python 3.6 or higher.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hybrid-protocol.git
+   git clone https://github.com/Shfiso-a/Hybrid-Protocol.git
    cd hybrid-protocol
    ```
 
