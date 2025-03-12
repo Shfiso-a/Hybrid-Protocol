@@ -505,25 +505,6 @@ Future planned features:
 - Interactive CLI for monitoring and administration
 - Web-based dashboard for protocol metrics
 
-## Recent Updates and Fixes
-
-The following recent updates and fixes have been implemented:
-
-1. **Fixed Variable Naming Inconsistencies** - Standardized variables like `connection_pooling_enabled` instead of having mixtures of `enable_connection_pooling`.
-
-2. **Enhanced SSLWrapper** - Updated the `wrap_socket` method to include `verify_peer` and `ca_file` parameters for better security configuration.
-
-3. **Added Missing Methods** - Implemented key methods that were missing:
-   - `send()` - Intelligently selects between TCP and UDP based on the configured transport selection strategy
-   - `send_udp()` - Implements UDP messaging with support for reliability, compression, and encryption
-
-4. **Comprehensive Testing** - Added a comprehensive test suite (`protocol_test.py`) that covers:
-   - Basic connection and messaging
-   - Compression functionality
-   - Encryption functionality
-   - Transport selection
-   - Message handlers
-
 ## Running Tests
 
 To run the comprehensive test suite:
@@ -572,6 +553,7 @@ This will execute all the tests and report any issues encountered. The test suit
 
 ## Known Issues and Potential Bugs
 
+This project is made newly so there is a lot of bugs
 While the hybrid protocol implementation is designed to be robust and reliable, there are some known issues and potential bugs that users should be aware of:
 
 1. **UDP Packet Loss**: Due to the nature of UDP, packet loss can occur, especially in unreliable network conditions. While the protocol supports reliable UDP, users should ensure that critical messages are sent with reliability enabled.
